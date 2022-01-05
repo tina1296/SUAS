@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.plz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menu" android:label="menu"></activity>
+        <activity android:name=".memo" android:label="memo"></activity>
+        <activity android:name=".calorie" android:label="calorie"></activity>
+        <activity android:name=".calc" android:label="calc"></activity>
+        <activity android:name=".wellbeing" android:label="wellbeing"></activity>
+        <activity android:name=".sleep" android:label="sleep"></activity>
+        <activity android:name=".mind" android:label="mind"></activity>
+        <activity android:name=".shopping" android:label="shopping"></activity>
+        <activity android:name=".exercise" android:label="exercise"></activity>
+        <activity android:name=".search" android:label="search"></activity>
+        <activity android:name=".dp" android:label="dp"></activity>
+        <activity android:name=".mp" android:label="mp"></activity>
+        <activity android:name=".stop" android:label="stop"></activity>
+        <service android:enabled="true" android:name=".music" ></service>
+        <activity android:name=".squat" android:label="squat"></activity>
+        <activity android:name=".jull" android:label="jull"></activity>
+        <activity android:name=".flank" android:label="flank"></activity>
+        <activity android:name=".running" android:label="running"></activity>
+        <activity android:name=".form" android:label="form"></activity>
+        <activity android:name=".fcalc" android:label="calc"></activity>
+        <activity android:name=".howtouse" android:label="howtouse"></activity>
+    </application>
+
+</manifest>
