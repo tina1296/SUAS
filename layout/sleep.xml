@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="24시간 기준으로 기록해 주세요!(00:00~23:59)"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/text"
+        android:text="잠든시간:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_toRightOf="@id/a"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/b"
+        android:text="일어난 시간:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b"
+        android:layout_alignRight="@id/c"
+        android:text=":" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/d"
+        android:layout_centerInParent="true"
+        android:onClick="onClick"
+        android:text="진단" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text"
+        android:layout_toRightOf="@id/textView6"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text"
+        android:layout_toRightOf="@id/textView11"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/c"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/a"
+        android:layout_toRightOf="@id/textView12"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/d"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/b"
+        android:layout_toRightOf="@id/textView15"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/d"
+        android:layout_toRightOf="@id/submit"
+        android:text="닫기" />
+
+</RelativeLayout>

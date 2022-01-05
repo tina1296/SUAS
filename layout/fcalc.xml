@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/height1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/age1"
+        android:layout_centerHorizontal="false"
+        android:text="키"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/weight1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/height1"
+        android:text="몸무게"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight"
+        android:layout_centerInParent="true"
+        android:text="나의 체형 분석" />
+
+    <Button
+        android:id="@+id/fit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight"
+        android:layout_toRightOf="@id/me"
+        android:text="이상적인 체형 분석" />
+
+    <TextView
+        android:id="@+id/age1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="나이"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/age1"
+        android:ems="10"
+        android:hint="나이를 입력하세요"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fit" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_toRightOf="@id/weight1"
+        android:ems="10"
+        android:hint="키를 입력하세요(cm)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height1"
+        android:layout_toRightOf="@id/weight1"
+        android:ems="10"
+        android:hint="몸무게를 입력하세요(kg)"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

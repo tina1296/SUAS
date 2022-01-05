@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="걷기/뛰기 "
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_below="@id/text"
+        app:srcCompat="@drawable/running" />
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@id/imageView7"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textSize="85dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView7"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/timer"
+        android:text="시작"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/start"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/timer"
+        android:text="정지"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/pause"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/timer"
+        android:text="리셋"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/we"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer"
+        android:text="몸무게(kg):"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/cou"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight"
+        android:text="분(min):"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/timer"
+        android:layout_toRightOf="@id/we"
+        android:ems="10"
+        android:hint="몸무게를 알려주세요"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/weight"
+        android:layout_toRightOf="@id/cou"
+        android:ems="10"
+        android:hint="운동시간을 알려주세요"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/cou"
+        android:text="걷기로 소비된 칼로리" />
+
+    <Button
+        android:id="@+id/renter"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/enter"
+        android:layout_marginTop="-2dp"
+        android:text="런닝으로 소비된 칼로리" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/renter"
+        android:layout_centerHorizontal="true"
+        android:text="닫기" />
+
+</RelativeLayout>

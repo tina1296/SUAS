@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="운동: 4가지의 항목으로 나누어져 있습니다. 모든 운동의 기본이 되는 스쿼트, 유산소의 꽃 줄넘기, 코어운동의 기본 플랭크, 유산소의 교과서 런닝입니다.모든 항목에 들어 있는 요소는 같습니다.\n자신의 몸무게와 운동한 시간을 기입하면 소비된 칼로리를 알 수 있습니다. 런닝 안에는 달리기와 겅기가 있으므로 각각 나눠서 회원님에게 알려드립니다. 또한 스탑워치의 항목을 통해 음악을 연동할 수 있으며 스트레칭과 같이 운동을 마무리할 때 활용하시면 좋습니다.\n\n칼로리: 칼로리는 칼로리 검색을 통해 다이어트 제품의 칼로리를 쉽게 찾아보실 수 있습니다. 칼로리 계산을 통해 자신의 기초대사량, bmi 수치를 대략적으로 파악하실 수 있습니다. 더욱 자세하고 정확한 분석은 인바디 측정을 해야하지만, 일반인의 인바디의 경우 크게 벗어나지 않습니다.\n\n쇼핑: 다이어트 뿐만 아니라 근육을 부가적으로 증대시킬 수 있는 다양한 제품들을 살펴 보실 수 있습니다.\n\n웰빙: 작심삼일로 끝내는 다이어트를 방지하기 위해 꾸준히 자극 시킬 수 있는 사진과 구절, 자신의 수면 시간을 파악할 수 있는 항목입니다. 이 항목을 통해 삶의 질을 올려보세요.\n\n메모: 자신이 오늘 하루 한 일을 기록하실 수 있습니다. 자신의 운동량, 섭취량을 잊지 마세요. 회원님의 하루를 응원합니다."
+        android:textSize="16dp" />
+</LinearLayout>
